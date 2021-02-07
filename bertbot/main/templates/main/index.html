@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title> Ask my BERT Bot</title>
+    </head>
+
+    <body>
+        <form action="{% url 'index' %}" method="post">
+            {% csrf token %} {form.as_p}}
+            <input type="submit" value="Submit">
+
+        </form>
+        <p> The answer is: {{answer}}</p>
+        <p>The prediction score is: {{score}}</p>
+    </body>
+</html>
